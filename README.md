@@ -12,7 +12,7 @@
 ### Pyinstaller -F main.py
 
 ### 这里提供打包好的EXE
-### 仅提供32位版本，在Win7X86下打包使用Pyinstaller，在Win7X86、Win7X64，Win10X64测试没有问题，且没有依赖问题[链接]### (https://github.com/queziaa/Excel_merging_two_tables/releases)
+### 仅提供32位版本，在Win7X86下打包使用Pyinstaller，在Win7X86、Win7X64，Win10X64测试没有问题，且没有依赖问题[链接](https://github.com/queziaa/Excel_merging_two_tables/releases)
 
 ### 输入文件要求
 ### 1：输入文件需要拥有两个工作簿，名字任意
