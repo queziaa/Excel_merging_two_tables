@@ -121,7 +121,7 @@ else:
     work_2_columns = work_2.max_column
 
 print("表一   行数 " + str(work_1_rows) + " 列数" + str(work_1_columns))
-print("表二   行数 " + str(work_2_rows) + " 列数" + str(work_2_columns))
+print("表二   行数 " + str(work_2_rows) + " 列数" + str(work_2_columns) + '\n')
 
 work_2_observe = [x for x in range(work_2_rows)[1:]]
 newBook = xlwt.Workbook(encoding="utf-8", style_compression=0)
@@ -156,10 +156,11 @@ index = 1
 sheet_1_index = 1
 sheet_1 = False
 for work_1_i in range(work_1_rows)[1:]:
+    print("已经处理 "+str(work_1_i/work_1_rows*100)[:4]+"% 的数据")
     work_1_list = openpyxl_list(work_1, work_1_i)
     work_1_mark = shenfenzhengFormat(work_1_list[0])
     found = False
-    for work_2_i in range(work_2_rows)[1:]:
+    for work_2_i in work_2_observe:
         work_2_list = openpyxl_list(work_2, work_2_i)
         if work_1_mark == shenfenzhengFormat(work_2_list[0]):
             sheetAdd(sheet_3, index, work_1_list, work_2_list)
