@@ -1,7 +1,7 @@
 # 通过一列进行两表（Excel）合并
 
 ### 可以直接运行.py文件处理表格
-### 寻要安装 xlwt xlrd openpyxl
+### 需要安装 xlwt xlrd openpyxl
 ### 我的开发平台 python3 没有在测试过 python2
 ### 使用时直接将表格的完整路径作为运行参数
 
