@@ -23,6 +23,7 @@ NowTime = time.time()
 
 print("欢迎使用表格合并，直接运行软件查看帮助，拖动表格文件至软件进行合并处理。\n")
 if len(sys.argv) == 1:
+    print("0: github.com/queziaa/Excel_merging_two_tables")
     print("1: 输入文件需要拥有两个工作簿，名字任意")
     print("2：将以第一列的内容进行比对将两表合并")
     print("3：同一工作簿第一列不能出现相同内容")
